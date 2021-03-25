@@ -1,10 +1,6 @@
 {
-  "registry.terraform.io/hashicorp/local": {
-    "hash": "h1:KfieWtVyGWwplSoLIB5usKAUnrIkDQBkWaR5TI+4WYg=",
-    "version": "2.1.0"
-  },
-  "registry.terraform.io/hashicorp/template": {
-    "hash": "h1:0wlehNaxBX7GJQnPfQwTNvvAf38Jm0Nv7ssKGMaG6Og=",
-    "version": "2.2.0"
+  "registry.terraform.io/hashicorp/aws": {
+    "hash": "h1:4+2CO4Pb3BKwI0MD+DBmnX5GFsYTs47y6w4/kQbPJIQ=",
+    "version": "3.33.0"
   }
 }

@@ -2,12 +2,11 @@ package test
 
 import (
 	"testing"
-
 	"github.com/gruntwork-io/terratest/modules/terraform"
 	"github.com/stretchr/testify/assert"
 )
 
-func TestExcercise1Test(t *testing.T) {
+func TestExcercise3Test(t *testing.T) {
 	t.Parallel()
 
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
@@ -21,7 +20,8 @@ func TestExcercise1Test(t *testing.T) {
 	defer terraform.Destroy(t, terraformOptions)
 	terraform.InitAndApply(t, terraformOptions)
 
-	expectedText := "test"
-	actualTextExample := terraform.Output(t, terraformOptions, "random_output_string")
-	assert.Equal(t, expectedText, actualTextExample)
+	expectedOutputs := make(map[string]interface{})
+	expectedOutputs["random_output_string"] = "test"
+	actualTextExample := terraform.OutputAll(t, terraformOptions)
+	assert.Equal(t, expectedOutputs, actualTextExample, "Assert onOutput variable `random_output_string` ")
 }
