@@ -11,4 +11,4 @@ go test -v -run excercise_3_test.go
 ```
 
 # Additional Readings
-(https://www.terraform.io/docs/language/values/variables.html)[https://www.terraform.io/docs/language/values/variables.html]
+https://www.terraform.io/docs/language/values/outputs.html
