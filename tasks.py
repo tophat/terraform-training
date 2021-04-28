@@ -26,6 +26,6 @@ def test(ctx, exercise =_get_exercise()):
     print(f'Running Exercise #{exercise}...')
     print("Installing Dependencies...")
     ctx.run("go install")
-    ctx.run("go install")
+    ctx.run("go mod download")
     print("Running Test...")
     ctx.run(f"go test -v excercise_{exercise}_test.go")
