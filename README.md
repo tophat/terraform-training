@@ -24,7 +24,7 @@ Keep in mind that each excercise is designed specifically to be solved with only
 - Brew: `brew install go`
 
 ## Install Terraform
-- `. ./scripts/bootstrap/` NOTE: will install terraform binary to `/usr/local/bin/` 
+- `. ./scripts/bootstrap` NOTE: will install terraform binary to `/usr/local/bin/` 
 
 # Usage
 - `cd excercise/excercise_1`
