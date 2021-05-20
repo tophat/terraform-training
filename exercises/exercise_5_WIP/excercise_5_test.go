@@ -2,31 +2,28 @@ package test
 
 import (
 	"fmt"
-	"strings"
 	"testing"
-	"github.com/gruntwork-io/terratest/modules/aws"
-	"github.com/gruntwork-io/terratest/modules/random"
+
 	"github.com/gruntwork-io/terratest/modules/terraform"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestExcercise4Test(t *testing.T) {
 	t.Parallel()
 
-	s3_bucket_name := fmt.Sprintf("terraform-training-%s", strings.ToLower(random.UniqueId()))
+	slack_channel_name := fmt.Sprintf("my-slack-channel")
 
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
 		// website::tag::1::Set the path to the Terraform code that will be tested.
 		TerraformDir: "./terraform/",
 		Vars: map[string]interface{}{
-			"s3_bucket_name": s3_bucket_name,
+			"slack_channel_name": slack_channel_name,
 		},
 		VarFiles: []string{"varfile.tfvars"},
-		NoColor: true,
+		NoColor:  true,
 	})
 
-
 	defer terraform.Destroy(t, terraformOptions)
-	terraform.InitAndApply(t, terraformOptions)
-
-	aws.AssertS3BucketExists(t, "us-east-1", s3_bucket_name)
+	output := terraform.InitAndApply(t, terraformOptions)
+	assert.Contains(t, output, "module.notify_slack", "Assert on using module `notify_slack`")
 }
