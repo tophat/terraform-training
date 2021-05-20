@@ -4,9 +4,11 @@ import (
 	"fmt"
 	"strings"
 	"testing"
+
 	"github.com/gruntwork-io/terratest/modules/aws"
 	"github.com/gruntwork-io/terratest/modules/random"
 	"github.com/gruntwork-io/terratest/modules/terraform"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestExcercise4Test(t *testing.T) {
@@ -21,12 +23,11 @@ func TestExcercise4Test(t *testing.T) {
 			"s3_bucket_name": s3_bucket_name,
 		},
 		VarFiles: []string{"varfile.tfvars"},
-		NoColor: true,
+		NoColor:  true,
 	})
 
-
 	defer terraform.Destroy(t, terraformOptions)
-	terraform.InitAndApply(t, terraformOptions)
-
+	output := terraform.InitAndApply(t, terraformOptions)
+	assert.Contains(t, output, "module.my_bucket.aws_s3_bucket", "Assert on using module `custom_s3_bucket` and creating `aws_s3_bucket`")
 	aws.AssertS3BucketExists(t, "us-east-1", s3_bucket_name)
 }

@@ -12,15 +12,15 @@ Keep in mind that each excercise is designed specifically to be solved with only
 
 # Exercise Layout
 
-`./excercies/exercise_#`                       : Root Folder  
-`./excercies/exercise_#/README.md`             : Description of exercise  
-`./excercies/exercise_#/excercise_#_test.go`   : Unit Test written in GO  
-`./excercies/excercise_#/terraform/*`          : terraform resources directory  
+`./excercies/exercise_#`                       : Root Folder
+`./excercies/exercise_#/README.md`             : Description of exercise
+`./excercies/exercise_#/excercise_#_test.go`   : Unit Test written in GO
+`./excercies/excercise_#/terraform/*`          : terraform resources directory
 
 # Install Dependenecies
 
 ## Install GO
-- Manual Install: https://golang.org/doc/install 
+- Manual Install: https://golang.org/doc/install
 - Brew: `brew install go`
 
 ## Install Terraform

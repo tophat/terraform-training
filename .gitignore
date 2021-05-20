@@ -4,3 +4,7 @@ terraform.tfstate.backup
 go.sum
 
 *.venv
+*.tfstate
+*.backup
+*.terraform.lock.hcl
+builds/

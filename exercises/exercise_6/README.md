@@ -1,6 +1,6 @@
 # Excercise 6: Create Terraform module
 
-The goal of Excercise 6 is to create terraform module that you can reuse accross different projects. This terraform module creates a S3 Bucket. The test passes is an a variable `s3_bucket_name` that should be used for the name of the bucket (as its used for assertion).
+The goal of Excercise 6 is to create custom terraform module that you can reuse accross different projects. This terraform module creates a S3 Bucket. The test passes is an a variable `s3_bucket_name` that should be used for the name of the bucket (as its used for assertion).
 
 ## Invoke
 ```
