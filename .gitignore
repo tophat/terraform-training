@@ -7,3 +7,4 @@ go.sum
 *.tfstate
 *.backup
 *.terraform.lock.hcl
+builds/
