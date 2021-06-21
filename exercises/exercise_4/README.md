@@ -1,6 +1,7 @@
-# Excercise 4: AWS Create S3 Resources
+# Exercise 4: AWS Create S3 Resources
 
-The goal of Excercise 4 is a terraform template that creates a S3 Bucket. The test passes in an a variable `s3_bucket_name` that should be used for the name of the bucket (as its used for assertion). 
+The goal of Exercise 4 is to create a Terraform template that creates an S3 Bucket.
+The test passes in a value for the variable `s3_bucket_name` that should be used for the name of the bucket (as it's used for assertion).
 
 
 ## Invoke

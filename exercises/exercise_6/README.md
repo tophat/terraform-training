@@ -1,10 +1,11 @@
-# Excercise 6: Create Terraform module
+# Exercise 6: Create Terraform module
 
-The goal of Excercise 6 is to CREATE a custom terraform module that you can reuse accross different projects. This terraform module should create a S3 Bucket.  You can use the folder in `terraform/module` to add the module.
+The goal of Exercise 6 is to CREATE a custom terraform module that you can reuse across different projects.
+This Terraform module should create a S3 Bucket. You should create a folder in `terraform/modules` to add the module.
 
 The test passes if a s3_bucket with the name given from the  variable `s3_bucket_name` is created via a module.
 
-Your Module should be named `my_bucket` and have an output variable called `aws_s3_bucket`. The test will assert the s3 bucket is created 
+Your Module should be named `my_bucket` and have an output variable called `aws_s3_bucket`. The test will assert the s3 bucket is created
 
 ## Invoke
 ```

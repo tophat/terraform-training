@@ -1,6 +1,6 @@
-# Excercise 2: Input Variables (pt 2)
+# Exercise 2: Input Variables (pt 2)
 
-Continuing on from excercise_1, we will now go about adding a new input variable. The test here will fail due to input variable not existing. 
+Continuing on from exercise_1, we will now go about adding a new input variable. The test here will fail due to input variable not existing.
 
 Fix this by adding the wanted input variable.
 
