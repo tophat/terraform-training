@@ -29,5 +29,5 @@ Keep in mind that each excercise is designed specifically to be solved with only
 # Usage
 - `cd excercise/excercise_1`
 - Read the README
-- `go test -v -run excercise_1_test.go`
+- `inv test`
 - Fix the issue by updating the templates in `excercies/excercise_1/terraform`
