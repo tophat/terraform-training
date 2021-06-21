@@ -1,3 +1,3 @@
 variable "random_input_string" {
-	type = string
+    type = string
 }

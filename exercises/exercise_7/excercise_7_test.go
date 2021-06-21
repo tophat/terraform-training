@@ -20,7 +20,7 @@ func TestExcercise7Test(t *testing.T) {
 	defer terraform.Destroy(t, terraformOptions)
 	terraform.InitAndApply(t, terraformOptions)
 
-	expectedText := []string{"th-excercise-0","th-excercise-1","th-excercise-2", "th-excercise-3", "th-excercise-4"}
+	expectedText := []string{"th-excercise-0","th-excercise-1","th-excercise-2", "th-excercise-3" }
 	actualTextExample := terraform.OutputList(t, terraformOptions, "buckets")
 	assert.Equal(t, expectedText, actualTextExample)
 }

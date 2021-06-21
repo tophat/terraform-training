@@ -4,6 +4,8 @@ Continuing on from excercise_1, we will now go about adding a new input variable
 
 Fix this by adding the wanted input variable.
 
+The input variable should be named `random_input_string` and you should give it a string value of `test`
+
 ## Invoke
 ```
 inv test
@@ -13,7 +15,7 @@ inv test
 ```
 # Only need to be ran once for all tests
 go get github.com/gruntwork-io/terratest/modules/terraform
-go test -v excercise__2_test.go
+go test -v excercise_2_test.go
 ```
 
 # Additional Readings

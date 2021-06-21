@@ -1,8 +1,12 @@
 # Excercise 5: AWS Create S3 Resources
 
-The goal of Excercise 5 is to use terraform module. A module is a container for multiple resources that are used together. We will use terraform module called "notify-slack". The test passes is on the module being added succesfully i.e. if terraform creates SNS and lambda.
+The goal of Excercise 5 is to use terraform module. A module is a container for multiple resources that are used together. We will use the public terraform module called "notify-slack".
 
-We should have two input variable - Slack channel and webhook
+The test passes if the module is succesfully referenced i.e. if terraform creates SNS and lambda.
+
+Note: do NOT create the resources manually. 
+
+The Test passes in 4 input variables `slack_channel_name`, `slack_webhook_url`, `slack_username`, `sns_topic_name`
 
 ## Invoke
 ```

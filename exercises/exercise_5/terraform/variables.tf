@@ -3,3 +3,21 @@ variable "slack_channel_name" {
   type        = string
   default     = ""
 }
+
+variable "slack_webhook_url" {
+  description = "Url for slack webhook"
+  type        = string
+  default     = ""
+}
+
+variable "sns_topic_name"{
+  description = "SNS topic Name"
+  type        = string
+  default     = ""
+} 
+
+variable "slack_username" {
+    description = "slack username"
+    type = string
+    default = ""
+}
