@@ -1,8 +1,10 @@
-# Excercise 1: Input Variables (pt 1)
+# Exercise 1: Input Variables (pt 1)
 
-Input Variables are used in terraform to pass variables into a terraform stack. These can be set via the cli with `--var` or using a `.tfvars` file. Running excercise_1 you will see that the input variable is failing the assert. Update the code in `./terraform` to set the input variable to the correct value
+Input Variables are used in terraform to pass variables into a Terraform stack. These can be set via the cli with `--var` or using a `.tfvars` file.
+Running exercise_1 you will see that the input variable is failing the assertion.
+Update the code in `./terraform` to set the input variable to the correct value
 
-Fix this test by editing the input var file in tfvars.
+Fix this test by editing the input var file `varfile.tfvars`.
 
 ## Invoke
 ```

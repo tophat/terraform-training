@@ -1,8 +1,8 @@
-# Excercise 3: Output Variables
+# Exercise 3: Output Variables
 
-As the inverse to Excercise 2, this test will fail due to missing output variable.
+As the inverse to Exercise 2, this test will fail due to a missing output variable.
 
-The output variable should be named `random_input_string` and should be the value of the input variable `random_input_string`
+The output variable should be named `random_output_string` and should be the value of the input variable `random_input_string`
 
 Fix this by adding the wanted output variable needed and giving it the correct value
 
