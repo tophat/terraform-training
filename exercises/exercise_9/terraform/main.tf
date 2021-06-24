@@ -4,7 +4,7 @@ terraform {
 }
 
 module "my_module" {
-    source = "./my_bucket"
+    source = "./my_module"
     input_one = "food"
     input_two = false
     input_three = 1
