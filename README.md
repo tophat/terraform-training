@@ -1,4 +1,5 @@
 # terraform-training
+![terraform-training](https://user-images.githubusercontent.com/42545233/123446215-a8e80f00-d5a6-11eb-87d0-be359b2641d8.png)
 
 Learn to write terraform by actually writing code (urm, i mean templates).
 
