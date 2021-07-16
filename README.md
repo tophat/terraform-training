@@ -28,7 +28,7 @@ Keep in mind that each excercise is designed specifically to be solved with only
 - `. ./scripts/bootstrap` NOTE: will install terraform binary to `/usr/local/bin/` 
 
 # Usage
-- `cd excercise/excercise_1`
+- `cd exercises/exercise_1`
 - Read the README
 - `inv test`
 - Fix the issue by updating the templates in `excercies/excercise_1/terraform`
