@@ -20,15 +20,18 @@ Keep in mind that each excercise is designed specifically to be solved with only
 
 # Install Dependenecies
 
-## Install GO
-- Manual Install: https://golang.org/doc/install
-- Brew: `brew install go`
+## Install Go
+
+We recommend using Go `1.16.2` because we've seen issues installing Go packages with versions above this.
+
+- **Manual Install:** download the appropriate installer/archive from https://golang.org/dl/#go1.16.2 and follow the remaining steps at https://golang.org/doc/install
+- **Homebrew:** `brew install go`
 
 ## Install Terraform
-- `. ./scripts/bootstrap` NOTE: will install terraform binary to `/usr/local/bin/` 
+- `. ./scripts/bootstrap` (NOTE: will install terraform binary to `/usr/local/bin/`)
 
 # Usage
 - `cd exercises/exercise_1`
 - Read the README
 - `inv test`
-- Fix the issue by updating the templates in `excercies/excercise_1/terraform`
+- Fix the issue by updating the templates in `exercises/exercise_1/terraform`
