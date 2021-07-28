@@ -25,7 +25,7 @@ def test(ctx, exercise =_get_exercise()):
     os.chdir(f"{root_dir}/exercises/exercise_{exercise}")
     print(f'Running Exercise #{exercise}...')
     print("Installing Dependencies...")
-    ctx.run("go install")
     ctx.run("go mod download")
+    ctx.run("go install")
     print("Running Test...")
     ctx.run(f"go test -v excercise_{exercise}_test.go")
