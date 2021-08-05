@@ -15,7 +15,7 @@ inv test
 ```
 # Only need to be ran once for all tests
 go get github.com/gruntwork-io/terratest/modules/terraform
-go test -v excercise_1_test.go
+go test -v exercise_1_test.go
 ```
 
 # Additional Readings

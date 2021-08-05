@@ -4,5 +4,5 @@ terraform {
 }
 
 resource "aws_s3_bucket" "s3_bucket" {
-  bucket = "th-excercise"
+  bucket = "th-exercise"
 }

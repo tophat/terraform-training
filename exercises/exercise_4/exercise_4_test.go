@@ -9,7 +9,7 @@ import (
 	"github.com/gruntwork-io/terratest/modules/terraform"
 )
 
-func TestExcercise4Test(t *testing.T) {
+func TestExercise4Test(t *testing.T) {
 	t.Parallel()
 
 	s3_bucket_name := fmt.Sprintf("terraform-training-%s", strings.ToLower(random.UniqueId()))
