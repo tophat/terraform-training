@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestExcercise4Test(t *testing.T) {
+func TestExercise5Test(t *testing.T) {
 	t.Parallel()
 
 	slack_channel_name := fmt.Sprintf("my-slack-channel")

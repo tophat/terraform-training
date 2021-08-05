@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestExcercise7Test(t *testing.T) {
+func TestExercise10Test(t *testing.T) {
 	t.Parallel()
 
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
@@ -22,13 +22,13 @@ func TestExcercise7Test(t *testing.T) {
 	terraform.InitAndApply(t, terraformOptions)
 
 	expectedOutputs := map[string]string{
-		"one":"two", 
+		"one":"two",
 		"two":"2",
-		"three":"[string string]", 
+		"three":"[string string]",
 		"four": "map[five:5 six:foobar]",
 	}
 
-	
+
 	outputFive := terraform.OutputMap(t, terraformOptions, "input")
 	assert.Equal(t, expectedOutputs, outputFive)
 }

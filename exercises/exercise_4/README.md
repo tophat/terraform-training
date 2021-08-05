@@ -15,7 +15,7 @@ inv test
 go get github.com/gruntwork-io/terratest/modules/terraform
 go get github.com/gruntwork-io/terratest/modules/random
 go get github.com/gruntwork-io/terratest/modules/aws
-go test -v excercise_4_test.go
+go test -v exercise_4_test.go
 ```
 
 # Additional Readings

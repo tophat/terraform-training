@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestExcercise7Test(t *testing.T) {
+func TestExercise9Test(t *testing.T) {
 	t.Parallel()
 
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
