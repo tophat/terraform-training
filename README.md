@@ -1,6 +1,8 @@
 # terraform-training
 ![terraform-training](https://user-images.githubusercontent.com/42545233/123446215-a8e80f00-d5a6-11eb-87d0-be359b2641d8.png)
 
+> # :warning: This material is archived and will not receive further updates. For the latest information on Terraform, it is advised to look at Terraform's [documentation](https://developer.hashicorp.com/terraform/docs) and [tutorials](https://developer.hashicorp.com/terraform/tutorials).
+
 Learn to write terraform by actually writing code (urm, i mean templates).
 
 If wanting to read through general terraform docs refer to here: https://www.terraform.io/docs/index.html
